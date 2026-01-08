@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PromptifAI</title>
+
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>PromptifAI</h2>
+
+    <textarea
+      id="promptInput"
+      placeholder="Paste or select a prompt..."
+      rows="6"
+    ></textarea>
+
+    <button id="enhanceBtn">Enhance Prompt</button>
+
+    <div id="status"></div>
+    <pre id="output"></pre>
+
+    <button id="copyBtn" style="display: none; margin-top: 10px;">📋 Copy to Clipboard</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
