@@ -1,4 +1,3 @@
-// background/background.js
 // Manifest V3 service worker
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {

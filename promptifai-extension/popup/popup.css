@@ -9,9 +9,8 @@
 
 body {
   width: 320px;
-  /* Deep Navy Background from Palette */
   background: #000B58; 
-  color: #FFF4B7; /* Cream Text */
+  color: #FFF4B7; 
 }
 
 .container {
@@ -25,22 +24,20 @@ h2 {
   text-align: center;
   font-size: 20px;
   font-weight: 700;
-  color: #FFF4B7; /* Cream */
+  color: #FFF4B7; 
   letter-spacing: 0.5px;
   margin-bottom: 4px;
 }
 
-/* Prompt Input Area */
 textarea {
   width: 100%;
   min-height: 110px;
-  resize: vertical; /* Allow vertical resizing only */
+  resize: vertical; 
   padding: 12px;
   border-radius: 8px;
-  /* Secondary Blue for input background */
   background: #003161; 
-  border: 1px solid #006A67; /* Teal Border */
-  color: #FFFFFF; /* White text for better readability than cream in input */
+  border: 1px solid #006A67;
+  color: #FFFFFF; 
   font-size: 13px;
   line-height: 1.4;
   outline: none;
@@ -48,20 +45,18 @@ textarea {
 }
 
 textarea:focus {
-  border-color: #FFF4B7; /* Highlight border on focus */
+  border-color: #FFF4B7; 
 }
 
 textarea::placeholder {
-  color: #8aa4c0; /* Softer blue-gray for placeholder */
+  color: #8aa4c0; 
 }
 
-/* Primary Action Button (Enhance) */
 #enhanceBtn {
   width: 100%;
   padding: 12px;
   border: none;
   border-radius: 8px;
-  /* Gradient using Teal to Secondary Blue */
   background: linear-gradient(135deg, #006A67, #003161);
   color: #FFF4B7;
   font-weight: 700;
@@ -89,7 +84,6 @@ textarea::placeholder {
   transform: none;
 }
 
-/* Secondary Action Button (Copy) */
 #copyBtn {
   width: 100%;
   padding: 10px;
@@ -101,30 +95,28 @@ textarea::placeholder {
   font-size: 13px;
   cursor: pointer;
   transition: all 0.2s ease;
-  display: none; /* Hidden by default */
+  display: none; 
 }
 
 #copyBtn:hover {
-  background: rgba(255, 244, 183, 0.1); /* Subtle cream tint on hover */
+  background: rgba(255, 244, 183, 0.1); 
 }
 
-/* Status Text */
 #status {
   font-size: 12px;
   text-align: center;
   color: #FFF4B7;
   opacity: 0.8;
-  min-height: 18px; /* Prevents layout jump when text appears */
+  min-height: 18px; 
 }
 
-/* Output Box */
 pre {
   width: 100%;
   padding: 12px;
-  background: #001f3f; /* Slightly darker than input for contrast */
+  background: #001f3f; 
   border-radius: 8px;
-  border-left: 4px solid #006A67; /* Accent strip on the left */
-  color: #e0f2fe; /* Very light blue text */
+  border-left: 4px solid #006A67; 
+  color: #e0f2fe; 
   font-size: 13px;
   line-height: 1.5;
   white-space: pre-wrap;
@@ -132,12 +124,10 @@ pre {
   max-height: 200px;
   overflow-y: auto;
   
-  /* Scrollbar styling for Webkit browsers */
   scrollbar-width: thin;
   scrollbar-color: #006A67 #003161;
 }
 
-/* Custom Scrollbar for Chrome/Edge */
 ::-webkit-scrollbar {
   width: 8px;
 }

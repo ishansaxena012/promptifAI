@@ -15,10 +15,7 @@ async function checkModels() {
   
   try {
     console.log("📡 Connecting to Google servers...");
-    // This calls the ListModels endpoint
     const modelResponse = await genAI.getGenerativeModel({ model: "gemini-pro" }).apiKey; 
-    // ^ The SDK doesn't have a direct "listModels" helper in the simple client, 
-    // so we use a raw fetch to debug this accurately:
     
     const response = await fetch(
         `https://generativelanguage.googleapis.com/v1beta/models?key=${process.env.GEMINI_API_KEY}`

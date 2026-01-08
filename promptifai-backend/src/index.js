@@ -7,6 +7,5 @@ const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => {
   console.log(`PromptifAI backend running on port ${PORT}`);
-  // Debug: Check if Key is loaded (Don't share this console log publicly!)
   console.log("API Key Status:", process.env.GEMINI_API_KEY ? "Loaded ✅" : "Missing ❌");
 });

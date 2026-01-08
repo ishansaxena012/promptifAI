@@ -10,7 +10,7 @@ export const buildEnhancedPrompt = async (prompt) => {
 
   try {
     const response = await ai.models.generateContent({
-      model: "gemini-2.0-flash-exp", // Update to latest model if "3-flash" fails
+      model: "gemini-2.0-flash-exp",
       contents: prompt,
       config: {
         systemInstruction: buildSystemInstruction(),
@@ -21,13 +21,10 @@ export const buildEnhancedPrompt = async (prompt) => {
       },
     });
 
-    // FIX: Remove the parenthesis '()'
-    // response.text is a property in the new SDK, not a function
     if (response.text) {
         return response.text; 
     }
     
-    // Fallback if text is null (e.g. safety blocks)
     throw new Error("No response text generated.");
 
   } catch (error) {
